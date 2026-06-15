@@ -1,5 +1,7 @@
 # Навигационное меню
 
+[![GitHub Pages](https://img.shields.io/github/actions/workflow/status/Onemored/ra16-homeworks-router/deploy.yml?branch=main&label=GitHub%20Pages)](https://onemored.github.io/ra16-homeworks-router/)
+
 Необходимо реализовать меню для сайта гоночного такси с пунктами «Главная», «Дрифт-такси», «Time Attack» и «Forza Karting». При переходе на страницу соответствующий пункт меню должен подсветиться:
 
 ![Навигационное меню](./assets/menu.jpg)
@@ -71,3 +73,34 @@
 Воспользуйтесь файлом `App.js` и стилями `css/index.css` из каталога в качестве отправной точки. Замените ими автоматически сгенерированные при создании проекта.
 
 **Обратите внимание**: в `App.js` может быть несколько компонентов для удобства копирования. В итоговом решении рекомендуется разнести их по отдельным файлам.
+
+---
+
+## Запуск готового проекта
+
+Требуется Node.js 20.19 или новее (рекомендуется актуальная LTS-версия Node.js 24)
+и Yarn 1.22.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+yarn install
+yarn dev
+```
+
+После запуска Vite выведет адрес локального сервера.
+
+Доступные команды:
+
+```bash
+yarn dev
+yarn lint
+yarn test
+yarn test:coverage
+yarn build
+yarn preview
+yarn validate
+```
+
+Команда `yarn validate` последовательно запускает ESLint, тесты с проверкой
+100% покрытия и production-сборку.
